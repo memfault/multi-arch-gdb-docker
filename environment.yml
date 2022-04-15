@@ -1,0 +1,6 @@
+name: memfault-multi-arch-gdb
+channels:
+  - memfault
+  - conda-forge
+dependencies:
+  - multi-arch-gdb=11.2=py310*
