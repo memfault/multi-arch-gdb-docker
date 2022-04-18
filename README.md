@@ -13,6 +13,6 @@ core file:
 
 ```bash
 # this repo has an example core + symbol file under the "example" directory
-❯ docker run --rm -t -i --volume "$PWD":/data conda-gdb-docker \
+❯ docker run --rm -t -i --volume "$PWD":/data memfault/multi-arch-gdb \
     gdb --se example/symbol_file.elf --core coredump.elf
 ```

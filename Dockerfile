@@ -13,7 +13,8 @@ RUN \
 
 COPY environment.yml /tmp/
 RUN . /opt/miniconda/etc/profile.d/conda.sh \
-    && conda env create -f /tmp/environment.yml
+    && conda env create -f /tmp/environment.yml \
+    && conda clean --all
 
 # cyrus dashboard
 RUN cd ~ \
