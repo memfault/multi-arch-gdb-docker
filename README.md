@@ -19,5 +19,5 @@ Example usage to analyze a core file:
 ```bash
 # this repo has an example core + symbol file under the "example" directory
 ❯ docker run --rm -t -i --volume "$PWD":/data memfault/multi-arch-gdb \
-    gdb --se example/symbol_file.elf --core coredump.elf
+    gdb --se example/symbol_file.elf --core example/coredump.elf
 ```
